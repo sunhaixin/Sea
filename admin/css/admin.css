@@ -1,0 +1,342 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0;}
+body { background:#f1f1f1; color:#eee; font-size:14px; font-family:"Microsoft Yahei","Lato-Light9ba4915556814",Verdana, Arial, Helvetica, sans-serif; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+a { color:#eee; text-decoration:none; }
+a:hover { text-decoration:none; }
+img { border:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; outline:none;}
+ol,ul,li { list-style:none; }
+
+@font-face{
+    font-family:"open-sans";
+    src:url(../../font/opensans.ttf);
+}
+body,html{
+    font-family:"open-sans","Microsoft Yahei",Verdana,Arial,Helvetica, sans-serif;
+}
+input:focus{
+    outline:2px solid rgb(166,200,255);
+}
+/* head */
+header{
+    width:100%;
+    height:32px;
+    background-color:#23282d;
+    color:#eee;
+    position:fixed;
+    z-index:9;
+}
+#header-left{
+    display:inline-block;
+    float:left;
+    margin-left:10px;
+    height:32px;
+    line-height:32px;
+    padding-left:32px;
+    color:#eee;
+    background:url(../images/house.png) no-repeat 0 center;
+    background-size:24px;
+}
+#header-right{
+    display:inline-block;
+    float:right;
+    margin-right:20px;
+    height:32px;
+    line-height:32px;
+    color:#eee;
+}
+#header-right span{
+    display:inline-block;
+}
+#header-right img{
+    display:inline-block;
+    border:1px solid #ccc;
+    vertical-align:middle;
+
+}
+
+/* aside */
+aside{
+    position:fixed;
+    top:0;
+    left:0;
+    width:160px;
+    height:700px;
+    background-color:#23282d;
+    color:#eee;
+    z-index:0;
+    padding-top:60px;
+}
+aside li{
+    padding:10px 0 10px 36px;
+    cursor:pointer;
+}
+#empty{
+    cursor:default;
+}
+
+#plus{
+    background:url(../images/plus.png) no-repeat 8px center;
+    background-size:16px 16px;
+}
+#js{
+    background:url(../images/js.png) no-repeat 8px center;
+    background-size:20px 20px;
+}
+#php{
+    background:url(../images/php.png) no-repeat 8px center;
+    background-size:20px 20px;
+}
+#h5{
+    background:url(../images/h5.png) no-repeat 8px center;
+    background-size:20px 20px;
+}
+#css{
+    background:url(../images/css.png) no-repeat 8px center;
+    background-size:20px 20px;
+}
+#nodejs{
+    background:url(../images/nodejs.png) no-repeat 8px center;
+    background-size:20px 20px;
+}
+#threejs{
+    background:url(../images/threejs.png) no-repeat 8px center;
+    background-size:20px 20px;
+}
+
+aside li.hoverSub{
+    background-color:#191e23 !important;
+}
+aside li.hoverSub a{
+    color:#00b9eb;
+}
+
+
+
+/* main */
+#main{
+    position:absolute;
+    top:52px;
+    right:10px;
+    left:180px;
+    height:580px;
+}
+#main h1{
+    width:100%;
+    height:40px;
+    font:26px "Microsoft Yahei";
+    color:#414243;
+    padding:15px 0 20px 0;
+}
+#main-left{
+    height:500px;
+    margin-right:220px;
+    color:#333;
+}
+#title{
+    height:40px;
+    width:100%;
+    margin-bottom:30px;
+}
+#title input{
+    width:98%;
+    height:40px;
+    border:1px solid transparent;
+    padding:0 1%;
+    font:bold 22px "Microsoft Yahei";
+    color:#333;
+}
+#title input:focus{
+    outline:2px solid rgb(166,200,255);
+}
+
+.toolbar-block:hover{
+    background:#ddd;
+}
+
+
+/* 工具栏 */
+#toolbar{
+    width:96%;
+    height:auto;
+    border-top:1px solid rgba(204,204,204,0.6);
+    border-bottom:1px solid rgba(204,204,204,0.6);
+    padding:10px 2%;
+    margin:10px 0;
+}
+.toolbar-block{
+    display:inline-block;
+    width:26px;
+    height:26px;
+    cursor:pointer;
+}
+#toolbar button{
+    display:inline-block;
+    width:16px;
+    height:16px;
+    margin:5px 5px;
+    text-align:center;
+    line-height:16px;
+    border:none;
+    cursor:pointer;
+}
+#qt-b{
+    background:url(../images/sprites.png) no-repeat 0 -379px;
+}
+#qt-i{
+    background:url(../images/sprites.png) no-repeat -16px -379px;
+}
+#qt-u{
+    background:url(../images/sprites.png) no-repeat -32px -379px;
+}
+#qt-del{
+
+}
+#qt-h{
+    background:url(../images/sprites.png) no-repeat -48px -379px;
+}
+#qt-bquote{
+    background:url(../images/sprites.png) no-repeat -96px -379px;
+}
+#qt-pre{
+    background:url(../images/sprites.png) no-repeat -112px -379px;
+}
+#qt-ul{
+    background:url(../images/sprites.png) no-repeat -144px -379px;
+}
+#qt-ol{
+    background:url(../images/sprites.png) no-repeat -128px -379px;
+}
+#qt-link{
+    background:url(../images/sprites.png) no-repeat -176px -379px;
+}
+#qt-img{
+    background:url(../images/sprites.png) no-repeat -64px -379px;
+}
+#qt-cf{
+    background:url(../images/sprites.png) no-repeat -160px -379px;
+}
+#toolbar-cf{
+    margin-left:40px;
+}
+
+/* 输入框 */
+#entry{
+    width:98%;
+    padding:1%;
+    height:auto;
+    min-height:350px;
+    background:#fff;
+}
+#entry:focus{
+    outline:2px solid rgb(166,200,255);
+}
+
+/* 设置 */
+#main-right{
+    width:200px;
+    height:520px;
+    margin-bottom:20px;
+    float:right;
+    background:#fff;
+    color:#333;
+}
+
+.linear-gradient{
+    width:100%;
+    height:1px;
+    background:linear-gradient(90deg,rgba(204, 204, 204,0) 0%,rgba(204, 204, 204,1) 12%,rgba(204, 204, 204,1) 45%,
+    rgba(204, 204, 204,1) 55%,rgba(204, 204, 204,1) 88%,rgba(204, 204, 204,0) 100%);
+}
+
+/* 发布 */
+#submitdiv{
+    width:100%;
+    height:160px;
+}
+
+.sub-top span{
+    display:block;
+    padding:10px;
+    font-weight:bold;
+}
+.sub-btm a{
+    color:#333;
+    display:block;
+    padding:8px;
+    text-align:center;
+}
+.sub-btm a:hover{
+    background:rgba(0,0,0,.04);
+    color:#000;
+}
+#submit{
+    background:rgba(0,133,186,.8);
+    border-radius:10px;
+    color:#000;
+    font-size:16px;
+    padding:6px 8px;
+}
+#submit:hover{
+    color:#eee;
+}
+
+
+/* 时间 */
+#time-top{
+    padding:10px;
+}
+#time-top input{
+    width:36px;
+    margin-right:2px;
+}
+#time-top input:focus{
+    border-color:transparent;
+}
+
+#time-btm{
+    padding:10px 10px;
+}
+#time-btm input{
+    width:36px;
+    margin-right:2px;
+}
+#time-btm input:focus{
+    border-color:transparent;
+}
+
+/* 分类 */
+#cate{
+    cursor:default;
+}
+#cate .checkbox{
+    padding:6px 10px;
+    user-select:none;
+}
+.smallbox{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    border:1px solid #333;
+}
+.none{
+    display:none;
+}
+.checkbox input:checked + .smallbox{
+    background:url(../images/che.png) no-repeat center;
+    background-size:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
