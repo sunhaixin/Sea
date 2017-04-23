@@ -80,8 +80,13 @@ DOM.prototype.addEventListener = function(a,b,c){
 
 };
 
-
 window.dom = new DOM();
+
+
+//判断设备类型
+function isIE(){
+    return navigator.userAgent.indexOf("MSIE")>-1;
+}
 
 //获取兄弟元素
 function siblings(elem){

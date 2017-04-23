@@ -2,7 +2,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 body { background:#f1f1f1; color:#eee; font-size:14px; font-family:"Microsoft Yahei","Lato-Light9ba4915556814",Verdana, Arial, Helvetica, sans-serif; }
 td,th,caption { font-size:14px; }
 h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
-a { color:#eee; text-decoration:none; }
+a { color:#333; text-decoration:none; }
 a:hover { text-decoration:none; }
 img { border:none; }
 input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; outline:none;}
@@ -71,6 +71,9 @@ aside{
 aside li{
     padding:10px 0 10px 36px;
     cursor:pointer;
+}
+aside a {
+    color: #eee;
 }
 #empty{
     cursor:default;
@@ -155,6 +158,17 @@ aside li.hoverSub a{
     background:#ddd;
 }
 
+#textarea{
+    position:relative;
+}
+
+/* 占位块 */
+#toolbar_blank{
+    width:100%;
+    height:72px;
+    border-top:1px solid transparent;
+    border-bottom:1px solid transparent;
+}
 
 /* 工具栏 */
 #toolbar{
@@ -173,15 +187,55 @@ aside li.hoverSub a{
 }
 #toolbar button{
     display:inline-block;
-    width:16px;
-    height:16px;
-    margin:5px 5px;
+    width:26px;
+    height:26px;
     text-align:center;
-    line-height:16px;
+    line-height:26px;
     border:none;
     cursor:pointer;
 }
 #qt-b{
+    background:url(../images/edit_26.png) no-repeat -1px 0;
+}
+#qt-i{
+    background:url(../images/edit_26.png) no-repeat -26px 0;
+}
+#qt-u{
+    background:url(../images/edit_26.png) no-repeat -52px 0;
+}
+#qt-del{
+    background:url(../images/edit_26.png) no-repeat -78px 0;
+}
+#qt-h{
+    background:url(../images/edit_26.png) no-repeat -104px 0;
+}
+#qt-bquote{
+    background:url(../images/edit_26.png) no-repeat -130px 0;
+}
+#qt-pre{
+    background:url(../images/edit_26.png) no-repeat -156px 0;
+}
+#qt-ul{
+    background:url(../images/edit_26.png) no-repeat -182px 0;
+}
+#qt-ol{
+    background:url(../images/edit_26.png) no-repeat -208px 0;
+}
+#qt-link{
+    background:url(../images/edit_26.png) no-repeat -234px 0;
+}
+#qt-img{
+    background:url(../images/edit_26.png) no-repeat -260px 0;
+}
+#qt-cf{
+    background:url(../images/edit_26.png) no-repeat -286px 0;
+}
+#toolbar-cf{
+    margin-left:40px;
+}
+
+
+/*#qt-b{
     background:url(../images/sprites.png) no-repeat 0 -379px;
 }
 #qt-i{
@@ -219,7 +273,7 @@ aside li.hoverSub a{
 }
 #toolbar-cf{
     margin-left:40px;
-}
+}*/
 
 /* 输入框 */
 #entry{

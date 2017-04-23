@@ -108,19 +108,21 @@
                     <input type="text" name="title" value="" placeholder="在此输入标题" />
                 </div>
                 <div id="textarea">
-                    <div id="toolbar">
-                        <div class="toolbar-block"><button class="toolbar" id="qt-b" title="粗体"></button></div>
-                        <div class="toolbar-block"><button class="toolbar" id="qt-i" title="斜体"></button></div>
-                        <div class="toolbar-block"><button class="toolbar" id="qt-u" title="下划线"></button></div>
-                        <div class="toolbar-block"><button class="toolbar" id="qt-del" title="删除线"></button></div>
-                        <div class="toolbar-block"><button class="toolbar" id="qt-h" title="标题"></button></div>
-                        <div class="toolbar-block"><button class="toolbar" id="qt-bquote" title="引用"></button></div>
-                        <div class="toolbar-block"><button class="toolbar" id="qt-pre" title="插入代码"></button></div>
-                        <div class="toolbar-block"><button class="toolbar" id="qt-ul" title="无序列表"></button></div>
-                        <div class="toolbar-block"><button class="toolbar" id="qt-ol" title="有序列表"></button></div>
-                        <div class="toolbar-block"><button class="toolbar" id="qt-link" title="加入链接"></button></div>
-                        <div class="toolbar-block"><button class="toolbar" id="qt-img" title="插入图片"></button></div>
-                        <div class="toolbar-block" id="toolbar-cf"><button class="toolbar" id="qt-cf" title="清除格式"></button></div>
+                    <div id="toolbar_blank">
+                        <div id="toolbar">
+                            <div class="toolbar-block"><button class="toolbar" id="qt-b" title="粗体"></button></div>
+                            <div class="toolbar-block"><button class="toolbar" id="qt-i" title="斜体"></button></div>
+                            <div class="toolbar-block"><button class="toolbar" id="qt-u" title="下划线"></button></div>
+                            <div class="toolbar-block"><button class="toolbar" id="qt-del" title="删除线"></button></div>
+                            <div class="toolbar-block"><button class="toolbar" id="qt-h" title="标题"></button></div>
+                            <div class="toolbar-block"><button class="toolbar" id="qt-bquote" title="引用"></button></div>
+                            <div class="toolbar-block"><button class="toolbar" id="qt-pre" title="插入代码"></button></div>
+                            <div class="toolbar-block"><button class="toolbar" id="qt-ul" title="无序列表"></button></div>
+                            <div class="toolbar-block"><button class="toolbar" id="qt-ol" title="有序列表"></button></div>
+                            <div class="toolbar-block"><button class="toolbar" id="qt-link" title="加入链接"></button></div>
+                            <div class="toolbar-block"><button class="toolbar" id="qt-img" title="插入图片"></button></div>
+                            <div class="toolbar-block" id="toolbar-cf"><button class="toolbar" id="qt-cf" title="清除格式"></button></div>
+                        </div>
                     </div>
                     <div contenteditable="true" id="entry"></div>
                 </div>
